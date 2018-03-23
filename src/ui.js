@@ -1,6 +1,7 @@
 export class userDisplay{
 
-  displayNames(doctors) {
+
+  displayNames(doctors, addressConstructor) {
     doctors.forEach(function(doctor){
       let firstName = doctor.profile.first_name;
       let lastName = doctor.profile.last_name;
@@ -10,7 +11,12 @@ export class userDisplay{
         newPatientStatus = "is accepting new patients";
       }
 
-      $(".output").append("<p>" + firstName + " " + lastName + " " + newPatientStatus + "</p>");
+      $(".output").append("<p>" + firstName + " " + lastName + " " + newPatientStatus + " " + addressStr + "</p>");
     })
+  }
+
+  addressConstructor(doctor) {
+    let addressStr = doctor.practices[0].visit_address.street + ", " + doctor.practices[0].visit_address.street2 + ", " + doctor.practices[0].visit_address.city + ", " + doctor.practices[0].visit_address.state + ", " + doctor.practices[0].visit_address.zip;
+    return addressStr;
   }
 }
