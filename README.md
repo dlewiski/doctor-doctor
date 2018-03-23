@@ -13,7 +13,7 @@ _This is the Epicodus weekly project for week 2 of the JavaScript course. This a
 
 * Spec 2: Enter a name to receive a list of doctors in the Portland area that fit the search query.
 
-* Spec 3: Response includes any doctors, the following information should be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients 
+* Spec 3: Response includes any doctors, the following information should be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients
 
 * Spec 4: Description: Return the age of a human in Venus years. (A Venus year is .62 Earth years.)
   * Input example: "44"
@@ -24,7 +24,7 @@ _This is the Epicodus weekly project for week 2 of the JavaScript course. This a
   * Output example: 23
 
 * Spec 6: Description: Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-  * Input example: "44"
+  * Input example: "44" 
   * Output example: 4
 
 * Spec 7: Description: Determine how many years a user has left to live on Mercury
