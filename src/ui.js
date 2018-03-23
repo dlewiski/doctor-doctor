@@ -20,9 +20,9 @@ export class userDisplay{
       $(".output").append("<p>" + firstName + " " + lastName + " " + newPatientStatus + " at " + addressStr + ", Phone number: " + phoneNum + "</p>");
     })
   }
+
   noResults(response) {
     let body = JSON.parse(response);
-    console.log("here");
     if (body.meta.total === 0) {
       $(".output").append("<p>There are no doctors in the portland area that met the search criteria. Please alter your search and try again</p>");
     }

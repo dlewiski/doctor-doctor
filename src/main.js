@@ -16,6 +16,7 @@ $(document).ready(function(){
       $('.output').append("<p>Error ERROR!! RED ALERT!!! (did not get a 200 response)</p>");
       });
     });
+    
   $('#submit-name').submit(function(event){
     event.preventDefault();
     let newDoctors = new Doctor();
