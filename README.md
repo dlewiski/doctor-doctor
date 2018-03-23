@@ -3,10 +3,7 @@
 #### _By David Lewis_
 
 ## Description
-_This is the Epicodus weekly project for week 2 of the JavaScript course. This application takes in a users age and calculates how old the user would be on Venus, Mercury, Mars, and Jupiter._
-
-#### _Doctor Doctor_
-* Takes in a users age in years and calculates how old they would be according to how long other planets' "years" when compared to earths rotation around the sun. These methods can also determine how many years you have left on Venus, Mars, Jupiter, and Mercury according to the same planet year conversions. Life expectancy is set to be the average life expectancy of everyone human being on Earth. If you are past the life expectancy, the app can determine how many years on each planet you are past that age.
+_This is the Epicodus weekly project for week 2 of the JavaScript course. This application takes in either a name or a symptom and returns a list of all the doctors in Portland, OR that meet that criteria using the BetterDoctor API._
 
 ### Specifications
 * Spec 1: Enter a medical issue to receive a list of doctors in the Portland area that fit the search query.
@@ -26,11 +23,11 @@ _This is the Epicodus weekly project for week 2 of the JavaScript course. This a
 Clone to your Desktop.
 
 ```
-git clone https://github.com/dlewiski/galactic_age_calculator
+git clone https://github.com/dlewiski/doctor-doctor
 ```
 In terminal, navigate to the root directory of the project
 
-* _Run tests_
+* _Setup application_
 
 ```
 npm install
@@ -38,8 +35,24 @@ npm install
 ```
 npm run build
 ```
+
+* _Get your API key_
+
+  * Visit the BetterDoctor API site and click “Get a free API key”
+  * Fill out the form
+  * Your API key should be listed on the front page (ex: “a2c356ibgh44…..”) or under My Account > Applications.
+
+* _Add your API key_
+
+* Create a file called .env in the root directory
+* In the .env file add your like this exports.apiKey=[YOUR API KEY GOES HERE]
+
+* _Run application_
+
+In terminal, make sure to navigate to the root directory of the project
+
 ```
-npm run test
+npm start
 ```
 
 ## Support and Contact Details
@@ -59,6 +72,7 @@ _To suggest changes, submit a pull request in the GitHub repository._
 * ES Lint
 * Webpack
 * Babel
+* BetterDoctor API
 
 ### License
 

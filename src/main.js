@@ -13,10 +13,11 @@ $(document).ready(function(){
       let doctors = newDoctors.doctorInfo(response)
       display.displayNames(doctors);
     }, function(error) {
+      console.log("here");
       $('.output').append("<p>Error ERROR!! RED ALERT!!! (did not get a 200 response)</p>");
       });
     });
-    
+
   $('#submit-name').submit(function(event){
     event.preventDefault();
     let newDoctors = new Doctor();
