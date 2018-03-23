@@ -23,10 +23,12 @@ export class Doctor {
   doctorInfo(response){
     let body = JSON.parse(response);
     console.log(body.data[0].practices[0].name);
-    let doctors = body.data.practices;
-    // body.colors.forEach(function(element) {
-    //     colorArr[element.name] = 0;
-    //   });
-      return doctors;
+    let doctors = [];
+    body.data.forEach(function(practice) {
+        practice.practices.forEach(function(element) {
+          doctors.push(element.name);
+        });
+      });
+    return doctors;
   }
 }
