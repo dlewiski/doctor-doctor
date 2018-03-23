@@ -39,7 +39,7 @@ export class Doctor {
 
   doctorInfo(response){
     let body = JSON.parse(response);
-    console.log(body.data[0].profile.first_name);
+    console.log(body.data[0].practices[1].accepts_new_patients);
     let profiles = []
     body.data.forEach(function(practice) {
       profiles.push(practice);
