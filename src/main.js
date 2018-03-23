@@ -4,16 +4,19 @@ $(document).ready(function(){
   $('#submit-symptom').submit(function(event){
     event.preventDefault();
     let newDoctors = new Doctor();
-    //console.log(newSearch.place);
-    let doctorPromise = newDoctors.doctorCall($('#symptom').val())
+    let doctorPromise = newDoctors.doctorCallSymptom($('#symptom').val())
     doctorPromise.then(function(response){
       let doctors = newDoctors.doctorInfo(response)
       $(".output").append("<p>" + doctors + "</p>");
-      // promise.then(function(response){
-      //   let stolenColors = newSearch.displayEachBikeColor(response, colorArr);
-      //   display.displayColors(stolenColors);
       });
-      //promise.error();
     });
-  //  colorPromise.error();
+  $('#submit-name').submit(function(event){
+    event.preventDefault();
+    let newDoctors = new Doctor();
+    let doctorPromise = newDoctors.doctorCallName($('#name').val())
+    doctorPromise.then(function(response){
+      let doctors = newDoctors.doctorInfo(response)
+      $(".output").append("<p>" + doctors + "</p>");
+      });
+    });
   });
