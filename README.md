@@ -1,11 +1,11 @@
-# Doctor Doctor
+# Doctor Doctor, give me the news...
 
 #### _By David Lewis_
 
 ## Description
 _This is the Epicodus weekly project for week 2 of the JavaScript course. This application takes in a users age and calculates how old the user would be on Venus, Mercury, Mars, and Jupiter._
 
-#### _Galactic Age Calculator_
+#### _Doctor Doctor_
 * Takes in a users age in years and calculates how old they would be according to how long other planets' "years" when compared to earths rotation around the sun. These methods can also determine how many years you have left on Venus, Mars, Jupiter, and Mercury according to the same planet year conversions. Life expectancy is set to be the average life expectancy of everyone human being on Earth. If you are past the life expectancy, the app can determine how many years on each planet you are past that age.
 
 ### Specifications
@@ -13,51 +13,11 @@ _This is the Epicodus weekly project for week 2 of the JavaScript course. This a
 
 * Spec 2: Enter a name to receive a list of doctors in the Portland area that fit the search query.
 
-* Spec 3: Response includes any doctors, the following information should be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients
+* Spec 3: If the response includes any doctors, the following information should be included about each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients
 
-* Spec 4: Description: Return the age of a human in Venus years. (A Venus year is .62 Earth years.)
-  * Input example: "44"
-  * Output example: 71
+* Spec 4: If the API call results in an error (any message not a 200 OK), the application should return a notification that states what the error is.
 
-* Spec 5: Description: Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)
-  * Input example: "44"
-  * Output example: 23
-
-* Spec 6: Description: Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
-  * Input example: "44" 
-  * Output example: 4
-
-* Spec 7: Description: Determine how many years a user has left to live on Mercury
-  * Input example: "44"
-  * Output example: 150
-
-* Spec 8: Description: Determine how many years a user has left to live on Venus
-  * Input example: "44"
-  * Output example: 58
-
-* Spec 9: Description: Determine how many years a user has left to live on Mars
-  * Input example: "44"
-  * Output example: 20
-
-* Spec 10: Description: Determine how many years a user has left to live on Jupiter
-  * Input example: "44"
-  * Output example: 3
-
-* Spec 11: Description: If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mercury
-  * Input example: "88"
-  * Output example: 33
-
-* Spec 12: Description: If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Venus
-  * Input example: "88"
-  * Output example: 13
-
-* Spec 13: Description: If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Mars
-  * Input example: "88"
-  * Output example: 4
-
-* Spec 14: Description: If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy on Jupiter
-  * Input example: "88"
-  * Output example: 1
+* Spec 5: f the query response doesn't include any doctors (for instance, if no doctors meet the search criteria), the application should return a notification that states that no doctors meet the criteria. (This is not an error so it should be handled separately from any errors.)
 
 
 ## Setup/Installation Requirements
