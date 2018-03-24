@@ -13,7 +13,6 @@ $(document).ready(function(){
       let doctors = newDoctors.doctorInfo(response)
       display.displayNames(doctors);
     }, function(error) {
-      console.log("here");
       $('.output').append("<p>Error ERROR!! RED ALERT!!! (did not get a 200 response)</p>");
       });
     });
@@ -23,7 +22,6 @@ $(document).ready(function(){
     let newDoctors = new Doctor();
     let doctorPromise = newDoctors.doctorCallName($('#name').val())
     doctorPromise.then(function(response){
-      console.log("here");
       display.noResults(response);
       let doctors = newDoctors.doctorInfo(response)
       display.displayNames(doctors);

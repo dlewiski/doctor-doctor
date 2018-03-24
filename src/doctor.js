@@ -40,10 +40,11 @@ export class Doctor {
   doctorInfo(response){
     let body = JSON.parse(response);
     // console.log(body.data[0].uid);
-    // console.log(body.data[0].profile.image_url);
+    console.log(body.data);
+    console.log(body.data[0].profile.image_url);
     // console.log(body.data[0].practices[0].visit_address.city);
     // console.log(body.data[0].practices[0].phones[0].number);
-    // console.log(body.data[0].practices[0].website);
+    console.log(body.data[0].practices[0].website);
     console.log(body.meta.total);
     let profiles = []
     body.data.forEach(function(practice) {
